@@ -1,0 +1,6 @@
+{
+  "name": "Sentieri del Pollino",
+  "description": "Guida interattiva e navigatore GPS in tempo reale per i sentieri, le vette e i pini loricati del Parco Nazionale del Pollino.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
