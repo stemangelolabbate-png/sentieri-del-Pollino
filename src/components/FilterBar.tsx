@@ -123,8 +123,8 @@ export function FilterBar({
           </div>
 
           {/* Length Filter Buttons */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
-            <span className="text-[11px] font-semibold text-stone-500 mr-1 uppercase flex items-center gap-1">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0" translate="no">
+            <span className="text-[11px] font-semibold text-stone-500 mr-1 uppercase flex items-center gap-1 notranslate" translate="no">
               <Ruler className="w-3 h-3" /> Lunghezza:
             </span>
             {(
@@ -138,8 +138,9 @@ export function FilterBar({
               <button
                 key={l.id}
                 id={`filter-length-${l.id}`}
+                translate="no"
                 onClick={() => handleLengthChange(l.id)}
-                className={`px-2.5 py-1 rounded-lg text-xs font-medium transition ${
+                className={`px-2.5 py-1 rounded-lg text-xs font-medium transition notranslate ${
                   filters.lengthFilter === l.id
                     ? 'bg-cyan-600 text-white font-semibold shadow-sm'
                     : 'bg-stone-800/80 text-stone-400 hover:text-stone-200'
@@ -152,8 +153,8 @@ export function FilterBar({
         </div>
 
         {/* Versante Selector */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
-          <span className="text-[11px] font-semibold text-stone-500 mr-1 uppercase">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0" translate="no">
+          <span className="text-[11px] font-semibold text-stone-500 mr-1 uppercase notranslate" translate="no">
             Versante:
           </span>
           {(
@@ -167,8 +168,9 @@ export function FilterBar({
             <button
               key={v.id}
               id={`filter-versante-${v.id}`}
+              translate="no"
               onClick={() => handleVersanteChange(v.id)}
-              className={`px-2.5 py-1 rounded-lg text-xs font-medium transition ${
+              className={`px-2.5 py-1 rounded-lg text-xs font-medium transition notranslate ${
                 filters.versante === v.id
                   ? 'bg-stone-200 text-stone-900 font-semibold'
                   : 'bg-stone-800/80 text-stone-400 hover:text-stone-200'

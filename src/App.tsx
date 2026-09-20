@@ -151,7 +151,7 @@ export default function App() {
   }, [filters, favorites]);
 
   return (
-    <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col font-sans selection:bg-emerald-600 selection:text-white">
+    <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col font-sans selection:bg-emerald-600 selection:text-white notranslate" translate="no">
       {/* Header / Navbar */}
       <Navbar
         onOpenInfo={() => setIsParkInfoOpen(true)}
